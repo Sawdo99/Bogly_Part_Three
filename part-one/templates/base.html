@@ -1,0 +1,28 @@
+<!-- Base Template -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Blogy Project {% block title %}{% endblock %}
+    </title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <h1>User Options</h1>
+            <ul class="navbar-user">
+                <li class="nav-index" href="/part-one/templates/users/index.html">List Users</li>
+                <li class="nav-new" href="/part-one/templates/users/new.html">Add Users</li>
+                <li class="nav-details" href="/part-one/templates/users/details.html">Show Users Details</li>
+                <li class="nav-edit" href="/part-one/templates/users/edit.html">Edit Users</li>
+            </ul>
+    </nav>
+    
+    <div class="container"> 
+        <!-- Where the choosen infromation will display -->
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+</html>
